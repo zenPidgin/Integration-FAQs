@@ -8,6 +8,7 @@
 
 $(document).ready(function(){
 
+	//get the info from the answers that are already on the page.
   var q2info = $("#q2 .answer").html();
   var q3info = $("#q3 .answer").html();
   var q4info = $("#q4 .answer").html();
@@ -16,6 +17,7 @@ $(document).ready(function(){
 
   var items = [
     {
+    	// Do I really need the ids here? I don't think I've used them..
       id: "#q2",
       className: ".q2info",
       info: popUpWrapper(q2info)
@@ -61,15 +63,18 @@ $(document).ready(function(){
     });
 
   for(var i = 0; i < items.length; i++ ){
+  	// For each instance of these classes, add a hidden div with the answer within it
   	$(items[i].className).prepend(items[i].info);
   }
   
   $(".hoverLink").hover(function(){
+  	// when hovered over, show hidden div/fade in/out
     $(this).children(".questionPopup").fadeToggle();
   });
 });
 
 function popUpWrapper(item){
+	//wrap it in a box!
   return "<div class='questionPopup'>" + item + "</div>";
 }
 
