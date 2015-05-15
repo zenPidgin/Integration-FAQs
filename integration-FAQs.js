@@ -1,12 +1,9 @@
 /*
-* This file is not included.
-* This is a copy of the code on the Integration FAQ page, just as a backup.
-* questions have IDs
-* spans have classes
-* when you hover over a span, 
-* show the popup div that is hidden at the beginning of the question
-* where the mouse is currently hovering
-* when the mouse leaves the span, hide the popup div
+* Goals:
+* Remove dependencies upon hard-coded IDs.
+* Dynamically gather question IDs.
+* This will break if a question is removed, because Kentico will reassign IDs 
+* based on what is actually in the file. IDs are not static to each question.
 */
 
 $(document).ready(function(){
