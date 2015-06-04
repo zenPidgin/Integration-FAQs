@@ -4,6 +4,10 @@
 * Dynamically gather question IDs.
 * This will break if a question is removed, because Kentico will reassign IDs 
 * based on what is actually in the file. IDs are not static to each question.
+* 
+* 6/4/15: Idea? When inputting an answer, I can assign a span a class ...
+*	  Yeah, but, with dynamic ids on the questions, how can I know what class to assign to the span...
+*	  hrm.
 */
 
 $(document).ready(function(){
