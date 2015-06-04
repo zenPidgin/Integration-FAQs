@@ -17,6 +17,6 @@ At runtime, Kentico spits out each question through a repeater, into an ordered 
 
 The transition wraps each question with a list item assigned with a class of .question, and adds an automatically generated ID (QuestionID).
 
-My job was to turn the list of questions into an accordion list, and add pop-ups whenever an answer to a question referenced another question.
+My job was to turn the list of questions into an accordion list, and add pop-ups whenever an answer to a question referenced another question's answer.
 
 The IDs that I have listed belong to the 5 answers that were referenced by other answers.
